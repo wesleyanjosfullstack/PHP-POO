@@ -15,7 +15,7 @@ class Caneta {
         else echo '<p>Estou rabiscando...</p>';
     }
     
-    private function tampar() {
+    public function tampar() {
         $this->tampada = true;
     }
 
