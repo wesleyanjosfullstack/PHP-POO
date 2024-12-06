@@ -2,7 +2,7 @@
 
 require_once './Fighter.php';
 
-class Fight extends Fighter {
+class Fight {
 
     private $challenged;
     private $challenging;
@@ -10,7 +10,7 @@ class Fight extends Fighter {
     private $approved;
 
     public function brandFight($fight1, $fight2) {
-        if ($fight1->getCategory() == $fight2->getCategory() && ($fight1 != $fight2)) {
+        if ($fight1->getCategory() === $fight2->getCategory() && ($fight1 != $fight2)) {
             $this->approved = true;
             $this->challenged = $fight1;
             $this->challenging = $fight2;
