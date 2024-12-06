@@ -44,7 +44,7 @@ class Fighter {
         $this->nationality = $nationality;
         $this->age = $age;
         $this->height = $height;
-        $this->weight = $weight;
+        $this->setWeight($weight);
         $this->category = $category;
         $this->victories = $victories;
         $this->defeats = $defeats;
@@ -96,7 +96,7 @@ class Fighter {
         return $this->category;
     }
 
-    public function setCategory() {
+    private function setCategory() {
         if ($this->weight < 52.2) $this->category = 'Inválido !';
         else if ($this->weight <= 70.3) $this->category = 'Leve !';
         else if ($this->weight <= 83.9) $this->category = 'Médio !';
