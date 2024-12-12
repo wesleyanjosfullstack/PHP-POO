@@ -7,15 +7,15 @@ class Reptile extends Animal {
     private $scaleColor;
 
     public function move() {
+        echo '<p>Rastejando</p>';
+    }
+    
+    public function feed() {
         echo '<p>Comendo vegetais</p>';
     }
-
-    public function feed() {
-        echo '<p>Som de Réptil</p>';
-    }
-
+    
     public function makeSound() {
-        echo '<p>Rastejando</p>';
+        echo '<p>Som de Réptil</p>';
     }
 
     public function getScaleColor() {
