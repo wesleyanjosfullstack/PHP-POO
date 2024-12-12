@@ -2,9 +2,9 @@
 
 abstract class People {
      
-    private $name;
-    private $age;
-    private $sex;
+    protected $name;
+    protected $age;
+    protected $sex;
 
     public final function birth() {
         $this->age++;

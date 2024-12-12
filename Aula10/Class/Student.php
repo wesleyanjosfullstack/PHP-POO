@@ -26,6 +26,7 @@ class Student extends People {
     public function setCourse($c) {
         $this->course = $c;
     }
+    
 }
 
 ?>
