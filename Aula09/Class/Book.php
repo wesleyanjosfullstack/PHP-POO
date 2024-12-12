@@ -1,6 +1,9 @@
 <?php
 
-class Book {
+require_once './Class/People.php';
+require_once './Interface/Publication.php';
+
+class Book implements Publication {
 
     private $title;
     private $author;
@@ -68,7 +71,28 @@ class Book {
     public function setPeople($p) {
         $this->people = $p;
     }
-    
+
+    public function open() {
+        $this->open = true;
+    }
+
+    public function close() {
+        $this->open = false;
+    }
+
+    public function browse($p) {
+        if ($p > $this->totPag) $this->totPag = 0;
+        else $this->pag = $p;
+    }
+
+    public function nextPag() {
+        $this->pag++;
+    }
+
+    public function prevPag() {
+        $this->pag--;
+    }
+
 }
 
 ?>
