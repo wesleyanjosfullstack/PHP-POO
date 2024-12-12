@@ -1,6 +1,8 @@
 <?php
 
-class Teacher {
+require_once './Class/People.php';
+
+class Teacher extends People {
 
     private $specialty;
     private $salary;
