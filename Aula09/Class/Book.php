@@ -13,7 +13,9 @@ class Book implements Publication {
     private $people;
 
     public function datails() {
-
+        echo '<hr><p>Livro '. $this->title .' escrito por '. $this->author .'<br>';
+        echo 'Páginas: '. $this->totPag .', página atual '. $this->pag .'<br>';
+        echo 'Sendo lido por '. $this->people->getName() .'</p>';
     }
 
     public function __construct($title, $author, $totPag, $people)
@@ -21,6 +23,8 @@ class Book implements Publication {
         $this->title = $title;
         $this->author = $author;
         $this->totPag = $totPag;
+        $this->open = false;
+        $this->pag = 0;
         $this->people = $people;
     }
 
