@@ -1,6 +1,6 @@
 <?php
 
-require_once './Class/People';
+require_once './Class/People.php';
 
 class Employee extends People {
 

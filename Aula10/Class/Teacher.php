@@ -28,3 +28,5 @@ class Teacher extends People {
     }
 
 }
+
+?>

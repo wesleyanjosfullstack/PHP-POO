@@ -8,7 +8,7 @@ class Student extends People {
     private $course;
 
     public function cancelRegistrtion() {
-        echo '<p>Matricuka será cancelada</p>';
+        echo '<p>Matricula será cancelada</p>';
     }
 
     public function getRegistration() {
