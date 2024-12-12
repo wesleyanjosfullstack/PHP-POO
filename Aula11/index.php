@@ -2,6 +2,7 @@
 
 require_once './Class/Visitor.php';
 require_once './Class/Student.php';
+require_once './Class/ScholarshipHolder.php';
 
 $v1 = new Visitor();
 $v1->setName('Juvenal');
@@ -17,5 +18,8 @@ $s1->setAge(16);
 $s1->setCourse('Informática');
 $s1->payMonthly();
 print_r($s1);
+
+$b1 = new ScholarshipHolder();
+$b1->setRegistration(111);
 
 ?>
