@@ -9,6 +9,10 @@ class ScholarshipHolder extends Student {
     public function renewScholarship() {
         echo '<p>Bolsa renovada !</p>';
     }
+    
+    public function payMonthly() {
+        echo '<p>'. $this->name .' é bolsista! Então paga com desconto !</p>';
+    }
 
     public function getScholarship() {
         return $this->scholarship;
@@ -17,6 +21,7 @@ class ScholarshipHolder extends Student {
     public function setScholarship($s) {
         $this->scholarship = $s;
     }
+
 
 }
 

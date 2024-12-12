@@ -20,6 +20,12 @@ $s1->payMonthly();
 print_r($s1);
 
 $b1 = new ScholarshipHolder();
-$b1->setRegistration(111);
+$b1->setRegistration(1112);
+$b1->setName('Jubileu');
+$b1->setScholarship(12.5);
+$b1->setCourse('Administração');
+$b1->setAge(17);
+$b1->payMonthly();
+print_r($b1);
 
 ?>
