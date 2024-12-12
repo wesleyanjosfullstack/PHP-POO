@@ -6,9 +6,17 @@ class Mammal extends Animal {
 
     private $skinColor;
 
-    public function move() {}
-    public function feel() {}
-    public function makeSound() {}
+    public function move() {
+        echo '<p>Correndo</p>';
+    }
+    
+    public function feed() {
+        echo '<p>Mamando</p>';
+    }
+    
+    public function makeSound() {
+        echo '<p>Som de mamífero</p>';
+    }
 
     public function getSkinColor() {
         return $this->skinColor;
