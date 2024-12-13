@@ -12,6 +12,8 @@ class Visualizacao {
     {
         $this->espectador = $e;
         $this->filme = $f;
+        $this->filme->setViews($this->filme->getViews() + 1);
+        $this->espectador->setTotAssistido($this->espectador->getTotAssistido() + 1);
     }
 
     public function getEspectador() {

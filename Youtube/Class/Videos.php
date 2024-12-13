@@ -1,6 +1,8 @@
 <?php
 
 require_once './Class/AcoesVideos.php';
+require_once './Class/Videos.php';
+require_once './Class/Gafanhoto.php';
 
 class Videos implements AcoesVideos {
 
