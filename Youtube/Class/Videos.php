@@ -1,6 +1,6 @@
 <?php
 
-require_once './AcoesVideos.php';
+require_once './Class/AcoesVideos.php';
 
 class Videos implements AcoesVideos {
 
@@ -19,25 +19,11 @@ class Videos implements AcoesVideos {
         $this->reproduzindo = false;
     }
 
-    public function play()
-    {
-        
-    }
-
-    public function pause()
-    {
-        
-    }
-
-    public function like() 
-    {
-
-    }
-
+    
     public function getTitulo() {
         return $this->titulo;
     }
-
+    
     public function setTitulo($t) {
         $this->titulo = $t;
     }
@@ -45,7 +31,7 @@ class Videos implements AcoesVideos {
     public function getAvaliacao() {
         return $this->avaliacao;
     }
-
+    
     public function setAvaliacao($a) {
         $this->avaliacao = $a;
     }
@@ -69,9 +55,21 @@ class Videos implements AcoesVideos {
     public function getReproduzindo() {
         return $this->reproduzindo;
     }
-
+    
     public function setReproduzindo($r) {
         $this->reproduzindo = $r;
+    }
+    
+    public function play() {
+        $this->reproduzindo = true;
+    }
+    
+    public function pause(){
+        $this->reproduzindo = false;
+    }
+    
+    public function like() {
+        $this->curtidas++;
     }
 
 }
