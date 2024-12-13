@@ -1,6 +1,6 @@
 <?php
 
-require_once './Class/Animal';
+require_once './Class/Animal.php';
 
 class Mammal extends Animal {
 
