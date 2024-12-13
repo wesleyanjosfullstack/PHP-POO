@@ -12,9 +12,8 @@ $g[0] = new Gafanhoto('Jubileu', 22, 'M', 'juba');
 $g[1] = new Gafanhoto('Creuza', 12, 'F', 'creuzita');
 
 $vis[0] = new Visualizacao($g[0], $v[2]);
+$vis[1] = new Visualizacao($g[0], $v[1]);
 
-// print_r($v);
-// print_r($g);
 print_r($vis);
 
 ?>
