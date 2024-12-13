@@ -14,6 +14,7 @@ $g[1] = new Gafanhoto('Creuza', 12, 'F', 'creuzita');
 $vis[0] = new Visualizacao($g[0], $v[2]);
 $vis[1] = new Visualizacao($g[0], $v[1]);
 $vis[0]->avaliar();
+$vis[1]->avaliarPorc(85);
 print_r($vis);
 
 ?>
